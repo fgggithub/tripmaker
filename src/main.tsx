@@ -6,7 +6,7 @@ import { Amplify } from "aws-amplify";
 import App from "./App.tsx";
 import "./index.css";
 import config from "../amplify_outputs.json";
-import ErrorBoundary from "./ErrorBoundary.tsx";
+
 
 Amplify.configure(config);
 
@@ -15,9 +15,7 @@ Amplify.configure(config);
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
-    <ErrorBoundary>
       <App />
-      </ErrorBoundary>
     </BrowserRouter>
   </StrictMode>
 );
