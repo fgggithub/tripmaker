@@ -53,6 +53,7 @@ export default function Hero() {
         contentType: "text/plain",
       },
     }).result
+    console.log("textUploadResult", textUploadResult);
 
 
     
